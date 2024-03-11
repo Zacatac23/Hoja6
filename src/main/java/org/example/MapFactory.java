@@ -3,7 +3,7 @@ package org.example;
 import java.util.Scanner;
 
 public class MapFactory {
-    public static UserInterface getUserInterface() {
+    public static UserInterface returnType() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Seleccione el tipo de mapa (1: HashMap, 2: TreeMap, 3: LinkedHashMap): ");
         int choice = scanner.nextInt();

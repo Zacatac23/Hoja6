@@ -26,10 +26,24 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
+        switch (tipoMap) {
+            case 1:
+                System.out.print("Ingrese el nombre de la carta: ");
+                String nombreCarta = scanner.next();
+                System.out.print("Ingrese el tipo de la carta: ");
+                String tipoCarta = scanner.next();
+                userInterface.addCard(nombreCarta, tipoCarta);
+                break;
+            case 2:
+                // Implementa la lógica para mostrar el tipo de una carta específica
+                break;
+            case 3:
+
+
         int opcion;
         do {
             System.out.println("Menú:");
-            System.out.println("1. Agregar una carta");
+            System.out.println("1. Agregar una carta a la colección");
             System.out.println("2. Mostrar el tipo de una carta específica");
             System.out.println("3. Mostrar todas las cartas en la colección");
             System.out.println("0. Salir");
@@ -72,7 +86,7 @@ public class Main {
                 if (parts.length == 2) {
                     String cardName = parts[0].trim();
                     String cardType = parts[1].trim();
-                    userInterface.addCardToCollection(cardName);
+                    userInterface.addCard(cardName, cardType);
                 }
             }
         } catch (IOException e) {
