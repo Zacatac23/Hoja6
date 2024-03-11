@@ -9,6 +9,7 @@ public class CardCollection implements UserInterface {
     @Override
     public void addCardToCollection(String cardName) {
         Card card = allCards.get(cardName);
+        System.out.println(allCards);
         if (card != null) {
             // Agregar la carta a la colección del usuario
             // Actualizar la cantidad si ya existe en la colección

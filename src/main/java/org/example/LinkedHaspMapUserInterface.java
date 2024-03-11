@@ -5,6 +5,7 @@ class LinkedHashMapUserInterface extends CardCollection {
     // Implementación específica para LinkedHashMap
     @Override
     public void addCardToCollection(String cardName) {
+        System.out.println(allCards);
         Card card = allCards.get(cardName);
         if (card != null) {
             // Agregar la carta a la colección del usuario
