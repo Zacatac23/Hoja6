@@ -13,7 +13,7 @@ class TreeMapUserInterface extends CardCollection {
             // Actualizar la cantidad si ya existe en la colección
             userCards.merge(cardName, 1, Integer::sum);
         } else {
-            System.out.println("Error: La carta no se encuentra entre las cartas disponibles.");
+            System.out.println("Error addCardToColection TreeMap: La carta no se encuentra entre las cartas disponibles.");
         }
     }
 
