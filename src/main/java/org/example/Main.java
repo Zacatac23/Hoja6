@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         // Obtener la implementación del mapa seleccionada por el usuario
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner;
         UserInterface userInterface = MapFactory.returnType();
         // Leer las cartas desde el archivo y agregarlas al mapa
         readCardsFromFile(userInterface);
